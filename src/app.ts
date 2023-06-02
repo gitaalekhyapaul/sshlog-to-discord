@@ -36,6 +36,8 @@ class JobService {
 \`${event_type}\` fired at **\`${formattedDate} IST\`:**
 \`\`\`${message}\`\`\``,
         username: `Server [${process.env.SERVER_NAME ?? "website"}] SSH Logs`,
+        avatar_url:
+          process.env.SERVER_LOGO ?? "https://github.com/gitaalekhyapaul.png",
       });
     });
   };
