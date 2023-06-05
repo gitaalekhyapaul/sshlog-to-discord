@@ -22,6 +22,12 @@ class JobService {
           duration: 1000,
           bounceBack: true,
         },
+        defaultJobOptions: {
+          attempts: 5,
+          backoff: 5,
+          removeOnComplete: true,
+          removeOnFail: true,
+        },
       }
     );
     this.queue.process(async (job) => {
