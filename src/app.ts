@@ -23,8 +23,6 @@ class JobService {
           bounceBack: true,
         },
         defaultJobOptions: {
-          attempts: 5,
-          backoff: 5,
           removeOnComplete: true,
           removeOnFail: true,
         },
